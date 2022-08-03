@@ -1,0 +1,61 @@
+<html>
+ 
+    <head>
+    <meta charset="UTF-8">
+    
+    <title>All, Elements</title>
+    
+    <style>
+    /* * {
+        color: red;
+        text-decoration: none;
+    }
+    p {
+        color: brown;
+    }
+    .class {
+        color: green;
+    }
+    a {
+        font-weight: bold;
+        font-style: italic;
+        text-decoration: underline;
+    }
+    p, a {
+        text-transform: uppercase;
+    } */
+    </style>
+
+</head>
+
+<body>
+    <h1 class="class1" id="id1">Title</h1>
+    <p class="class">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+    <a href="#">Link</a>
+
+    <script>
+        var p = document.querySelector("p");
+        p.style.color = "brown";
+        p.style.textTransform = "uppercase";
+       
+        var cls = document.querySelector(".class");
+        cls.style.color = "green";
+        cls.classList.add("newclass");
+        console.log(cls.style);
+        
+        var all = document.querySelector("body");
+        all.style.color = "red";
+        all.style.textDecoration = "none";
+
+        var a = document.querySelector("a");
+        a.style.color = "red";
+        a.style.fontWeight = "bold";
+        a.style.fontStyle = "italic";
+        a.style.textDecoration = "underline";
+        a.style.textTransform = "uppercase";
+        
+        </script>
+
+</body>
+
+</html>
